@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000103;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.topo{
+    text-align: center;
+    padding: 30px;
+}
+
+.topo h1{
+    color: #deb88e;
+    margin-bottom: 10px;
+}
+
+.topo h3{
+    font-weight: normal;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.topo img{
+    width: 250px;
+    margin: 20px 0;
+}
+
+.Artistas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+.card{
+    background-color: #1b1b1b;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.tabela{
+    width: 90%;
+    margin: 40px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1b1b1b;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+caption{
+    font-size: 28px;
+    font-weight: bold;
+    color: #d8b07a;
+    margin-bottom: 15px;
+}
+
+th{
+    background-color: #d8b07a;
+    color: black;
+    padding: 14px;
+    text-align: center;
+}
+
+td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+tr:nth-child(even){
+    background-color: #242424;
+}
+
+tr:hover{
+    background-color: #333;
+    transition: 0.3s;
+}
+.rodape {
+    margin: 0 auto;
+    width: 300px;
+}
