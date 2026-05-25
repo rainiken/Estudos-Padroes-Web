@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Pedido - Pedaço de Boteco</title>
+    <link rel="stylesheet" href="css/stylepedido.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Pedaço de Boteco"/>
+        <h1>Chamar o Den Den Mushi</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-pedido">
+        <form action="obrigado.html" method="POST">
+            
+            <div class="campo-form">
+                <label for="nome">Nome do Pirata / Capitão:</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Monkey D. Luffy" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="telefone">Número do Den Den Mushi (Telefone):</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Ex: (84) 99999-9999" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="endereco">Local de Ancoragem (Endereço de Entrega):</label>
+                <textarea id="endereco" name="endereco" placeholder="Ex: Navio Thousand Sunny, Porto de Dressrosa" required></textarea>
+            </div>
+
+            <div class="campo-form">
+                <label for="prato">Escolha o seu Saque (Prato Principal):</label>
+                <select id="prato" name="prato" required>
+                    <option value="" disabled selected>Selecione uma opção...</option>
+                    <option value="marguerita">Marguerita de Amazon Lily</option>
+                    <option value="carne-sol">Carne de Sol de Alabasta</option>
+                    <option value="camarao">Camarão Diable Jambe</option>
+                    <option value="costela">Costela do Franky (SUUUUPER)</option>
+                    <option value="all-blue">Especial All Blue (Porção)</option>
+                    <option value="fritas-sea-king">Fritas com Linguiça de Sea King</option>
+                </select>
+            </div>
+
+            <div class="campo-form">
+                <label for="tamanho">Tamanho da Pizza (Se aplicável):</label>
+                <select id="tamanho" name="tamanho">
+                    <option value="nao-se-aplica">Não se aplica (Pedi Porção)</option>
+                    <option value="media">Média (6 Fatias)</option>
+                    <option value="grande">Grande (8 Fatias)</option>
+                </select>
+            </div>
+
+            <div class="campo-form">
+                <label for="bebida">Bebida do Barril:</label>
+                <select id="bebida" name="bebida">
+                    <option value="nenhuma" selected>Nenhuma, obrigado</option>
+                    <option value="chopp">Chopp do East Blue (600ml)</option>
+                    <option value="sake">Sake do Zoro (Dose)</option>
+                    <option value="refrigerante">Refrigerante da Franky House (1L)</option>
+                    <option value="suco">Suco de Akuma no Mi (Jarra)</option>
+                </select>
+            </div>
+
+            <div class="campo-form">
+                <label for="observacoes">Instruções para o Chef (Observações):</label>
+                <textarea id="observacoes" name="observacoes" placeholder="Ex: Tirar a cebola, caprichar no barbecue..."></textarea>
+            </div>
+
+            <button type="submit" class="botao-enviar">Enviar Pedido à Tripulação!</button>
+        </form>
+    </main>
+
+    <footer>
+        <h2>Fale com nossa Tripulação!</h2>
+        <p>Ligue para o nosso Den Den Mushi de reservas: 0800-...</p>
+        <p>2026 Pedaço de Boteco. Cuidado com os Reis dos Mares.</p>
+    </footer>
+</body>
+</html>
